@@ -11,8 +11,8 @@
    body { color: #E8E4D8; font-family: 'IBM Plex Mono', ui-monospace, monospace; padding: 16px 20px; min-height: 100vh; box-sizing: border-box; }
    body::after { content: ""; position: fixed; inset: 0; pointer-events: none;
      background: repeating-linear-gradient(0deg, rgba(255,255,255,.035) 0, rgba(255,255,255,.035) 1px, transparent 1px, transparent 3px); }
-   h1 { font-size: 26px; font-weight: 600; letter-spacing: 1px; color: #F2C200; margin: 8px 0 18px; }
-   pre { font-family: inherit; font-size: 14px; line-height: 1.6; overflow-x: auto; margin: 0; }
+   h1 { font-size: min(26px, 6vw); font-weight: 600; letter-spacing: 1px; color: #F2C200; margin: 8px 0 18px; }
+   pre { font-family: inherit; font-size: min(14px, calc((100vw - 40px) / 44.6)); line-height: 1.6; overflow-x: auto; margin: 0; }
    hr { border: 0; border-top: 1px solid #3A382F; margin: 6px 0; }
    a { color: #F2C200; } a:hover { color: #FFE27A; }
    .hd, .t { color: #A9A493; }
@@ -22,7 +22,9 @@
  <body>
 <h1>Index of /distribution</h1>
 <pre><span class="hd">      Name                    Last modified      Size  Description</span><hr><span class="t">[DIR]</span> <a href="/">Parent Directory</a>                             -
+<span class="t">[HTM]</span> <a href="SN-0001.html">SN-0001.html</a>            16-Nov-1952 12:00  6.6K  transmission review
 <span class="t">[TXT]</span> <a href="SN-0001.txt">SN-0001.txt</a>             16-Nov-1952 12:00  4.2K
+<span class="t">[HTM]</span> <a href="SN-0002.html">SN-0002.html</a>            16-Nov-1952 12:30  5.6K  transmission log
 <span class="t">[TXT]</span> <a href="SN-0002.txt">SN-0002.txt</a>             16-Nov-1952 12:30  3.3K
 <hr></pre>
 <address>Apache/2.2.3 (Unix) Server at sitnorm-control.github.io Port 80</address>
